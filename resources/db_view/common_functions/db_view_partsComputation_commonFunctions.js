@@ -29,7 +29,7 @@ export function getParts(parts) {
   if (parts === null) return null;
   for (const part of parts) {
     flatParts.push(part);
-    if (part.hasOwnProperty("parts") && part.parts != null) {
+    if (part.hasOwnProperty('parts') && part.parts != null) {
       flatParts.push(part.parts);
     }
   }
