@@ -1,29 +1,9 @@
 {
   "name": "aktiv-lambda",
   "devDependencies": {
-    "eslint-config-airbnb": "^19.0.4",
-    "serverless-bundle": "5.5.0",
-    "serverless-cloudformation-resource-counter": "1.1.1",
-    "serverless-domain-manager": "6.1.0",
-    "serverless-offline": "9.3.0",
-    "serverless-pseudo-parameters": "2.6.1",
-    "serverless-vpc-discovery": "4.0.2",
-    "serverless-webpack": "5.9.1"
+    "eslint-config-airbnb": "^19.0.4"
   },
   "dependencies": {
-    "async-redis": "2.0.0",
-    "aws-sdk": "2.1205.0",
-    "axios": "0.27.2",
-    "bluebird": "3.7.2",
-    "digest-fetch": "1.2.0",
-    "google-spreadsheet": "3.3.0",
-    "jsonwebtoken": "8.5.1",
-    "mongocrypt": "1.1.2",
-    "mongodb": "4.9.0",
-    "mongodb-client-encryption": "2.2.0",
-    "node-fetch": "^3.2.10",
-    "saslprep": "1.0.3",
-    "uuid": "8.3.2",
     "webpack": "5.51.2"
   },
   "scripts": {
