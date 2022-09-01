@@ -19,7 +19,7 @@ async function executeEslintFix(args = []) {
     cwd: process.env.GITHUB_WORKSPACE,
     ignoreReturnCode: true
   }
-  const exitCode = await exec.exec('npm run lint:eslint:fix', arguments, options);
+  const exitCode = await exec.exec('npm run lint:eslint', arguments, options);
   if (exitCode !== 0) {
     throw `Airbnb JS Format failed with exit code ${ exitCode }`;
   }
