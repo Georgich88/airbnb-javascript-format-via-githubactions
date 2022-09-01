@@ -1,0 +1,24 @@
+name: "Airbnb JavaScript Format"
+description: "Automatically format JavaScript files using Airbnb JavaScript Style Guide"
+branding:
+  color: "red"
+  icon: "align-right"
+inputs:
+  args:
+    description: "Arguments for the Airbnb JavaScript Format (ESLing)"
+    required: false
+    default: "--fix"
+  skipCommit:
+    description: "Set to true to not commit the changes"
+    required: false
+    default: "false"
+  githubToken:
+    description: "Recommended on MacOS machines"
+    required: false
+  commitMessage:
+    description: "Commit message"
+    required: false
+    default: "Airbnb JavaScript Format"
+runs:
+  using: "node12"
+  main: "dist/index.js"

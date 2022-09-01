@@ -1,0 +1,23 @@
+# Example workflow
+name: Format
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch'
+        required: true
+        default: 'main'
+
+jobs:
+
+  format:
+    name: Format (${{ github.event.inputs.branch || github.ref }})
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.inputs.branch || github.ref }}
+      - uses: ./.github/actions/airbnb-format
+        with:
+          args: "--fix"
